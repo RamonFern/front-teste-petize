@@ -1,8 +1,4 @@
-.example-card {
-    max-width: 400px;
-  }
+.container {
+  background-color: darkturquoise;
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+}
