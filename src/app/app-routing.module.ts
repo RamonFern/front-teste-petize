@@ -2,10 +2,12 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetalheComponent } from './components/detalhe/detalhe.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'adicionar', component: CadastroComponent}
+  {path: 'adicionar', component: CadastroComponent},
+  {path: 'detalhe', component: DetalheComponent}
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
+
+import { LivroService } from './../../service/livro.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarComponent implements OnInit {
 
-  constructor() { }
+  listaLivros: any
+   
+  constructor(private livroService: LivroService) { }
 
   ngOnInit(): void {
+    this.livroService.listar().subscribe(lib => {
+      this.listaLivros = lib
+      console.log(this.listaLivros)
+    })
   }
 
 }

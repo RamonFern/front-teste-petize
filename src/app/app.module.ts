@@ -1,3 +1,5 @@
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core/datetime';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,10 +11,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { CabComponent } from './components/cab/cab.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { ListarComponent } from './components/listar/listar.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatTabsModule } from '@angular/material/tabs';
+import { DetalheComponent } from './components/detalhe/detalhe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -21,7 +29,8 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
     HomeComponent,
     CabComponent,
     ListarComponent,
-    CadastroComponent
+    CadastroComponent,
+    DetalheComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,14 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatTabsModule,
+    ReactiveFormsModule,
+    FormsModule
+   
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,47 @@
-<p>cadastro works!</p>
+<div class="container">
+ <br>
+<form [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
+  <h1>Adicionar</h1>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Titulo</mat-label>
+      <input matInput name="titulo" formControlName="titulo">
+    </mat-form-field></td>
+    
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Autor</mat-label>
+      <input matInput name="autor" formControlName="autor">
+    </mat-form-field></td>
+  </tr></table>
+<br>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Url (capa)</mat-label>
+      <input matInput name="url" formControlName="url">
+    </mat-form-field></td>
+
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>ano</mat-label>
+      <input matInput
+             name="data"
+             formControlName="data">
+    </mat-form-field></td>
+  </tr></table>
+  <br>
+  <p>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Informações</mat-label>
+      <textarea matInput placeholder="Ex. 100 Main St" name="sinopse" formControlName="sinopse"></textarea>
+    </mat-form-field>
+    
+  </p>
+  <button type="submit" class="example-button-row" mat-button color="accent">SALVAR</button>
+ 
+  <button type="reset" class="example-button-row" mat-button color="accent">CANCELAR</button>
+
+  <button (click)="navegar()" class="example-button-row" mat-button color="accent">VOLTAR PARA LISTA</button>
+  
+</form>
+ 
+
+</div>
