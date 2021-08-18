@@ -1,19 +1,13 @@
 
 <br>
 <h1>Todos os Livros</h1>
-
-<
-    
-    <mat-card class="example-card">
-     
+    <mat-card class="example-card" (click)="detalhe()" *ngFor="let livro of listaLivros.livros">
       <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content>
-        <mat-card-title>titulo</mat-card-title>
-        <mat-card-subtitle>autor</mat-card-subtitle>
+        <mat-card-title>{{ livro.titulo}}</mat-card-title>
+        <mat-card-subtitle>{{livro.autor}}</mat-card-subtitle>
       </mat-card-content>
-      
     </mat-card>
- 
   
 
 
