@@ -14,6 +14,7 @@ export class ListarComponent implements OnInit {
   listaLivros: any
   id: any
   
+  
   constructor(private livroService: LivroService, 
               private router: Router, ) { }
 
