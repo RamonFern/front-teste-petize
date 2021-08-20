@@ -1,26 +1,27 @@
 <div class="container">
  <br>
-<form [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
+<form class="example-form" [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
   <h1>Adicionar</h1>
+  
   <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width" appearance="fill">
+    <td><mat-form-field class="titulo-full-width" appearance="fill">
       <mat-label>Titulo</mat-label>
       <input matInput name="titulo" formControlName="titulo">
     </mat-form-field></td>
     
-    <td><mat-form-field class="example-full-width" appearance="fill">
+    <td><mat-form-field class="autor-full-width" appearance="fill">
       <mat-label>Autor</mat-label>
       <input matInput name="autor" formControlName="autor">
     </mat-form-field></td>
   </tr></table>
 <br>
   <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width" appearance="fill">
+    <td><mat-form-field class="url-full-width" appearance="fill">
       <mat-label>Url (capa)</mat-label>
       <input matInput name="url" formControlName="url">
     </mat-form-field></td>
 
-    <td><mat-form-field class="example-full-width" appearance="fill">
+    <td><mat-form-field class="ano-full-width" appearance="fill">
       <mat-label>ano</mat-label>
       <input matInput
              name="data"
@@ -29,7 +30,7 @@
   </tr></table>
   <br>
   <p>
-    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="sinopse-full-width" appearance="fill">
       <mat-label>Informações</mat-label>
       <textarea matInput placeholder="Ex. 100 Main St" name="sinopse" formControlName="sinopse"></textarea>
     </mat-form-field>
@@ -43,5 +44,6 @@
   
 </form>
  
+
 
 </div>

@@ -1,15 +1,19 @@
-<button (click)="navegar()" class="example-button-row" mat-button color="accent">VOLTAR PARA LISTA</button>
-<mat-grid-list cols="2" rowHeight="1:1">
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        </mat-card>
-    </mat-grid-tile>
+<div class="container">
+   <button (click)="navegar()" class="example-button-row" mat-button color="black"> <i (click)="navegar()" class="large material-icons">arrow_back</i></button>
+    <mat-grid-list cols="2" rowHeight="1:1">
+        <mat-grid-tile>
+            <mat-card class="card">
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            </mat-card>
+        </mat-grid-tile>
 
-    <mat-grid-tile>
-        <mat-card-content>
-            <mat-card-title>titulo</mat-card-title>
-            <mat-card-subtitle>autor</mat-card-subtitle>
-        </mat-card-content>
-    </mat-grid-tile>   
-</mat-grid-list>
+        <mat-grid-tile class="esq">
+            <mat-card-content>
+                <mat-card-title>{{ livro.titulo }}</mat-card-title>
+                <mat-card-subtitle> by {{ livro.autor }}</mat-card-subtitle>
+                <p>
+                    {{ livro.sinopse }}
+                </p>
+            </mat-card-content>
+        </mat-grid-tile>   
+    </mat-grid-list>

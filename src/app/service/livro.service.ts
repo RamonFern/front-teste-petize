@@ -17,4 +17,8 @@ export class LivroService {
     return this.httpClient.post('http://localhost:8080/biblioteca/livros/criar', livro);
   }
 
+  buscarPorId(id: any){
+    return this.httpClient.get(`http://localhost:8080/biblioteca/livros/listar/todos/${id}`);
+  }
+
 }

@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class CadastroComponent implements OnInit {
 
   cadastro!: FormGroup
-  livro: Livro = new Livro('','','','')
+  livros: any
   constructor(private fb: FormBuilder,private router: Router, private livroService: LivroService) { }
 
   ngOnInit(): void {

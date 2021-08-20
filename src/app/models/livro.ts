@@ -4,6 +4,7 @@ export class Livro{
                 titulo: string,
                 data: string,
                 sinopse: string,
-                nomeAutor: string){}
+                nomeAutor: string,
+                url: string){}
     
 }
