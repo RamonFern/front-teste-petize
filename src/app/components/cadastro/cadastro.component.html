@@ -3,7 +3,7 @@
 <form class="example-form" [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
   <h1>Adicionar</h1>
   
-  <table class="example-full-width" cellspacing="0"><tr>
+  <table class="example-full-width"><tr>
     <td><mat-form-field class="titulo-full-width" appearance="fill">
       <mat-label>Titulo</mat-label>
       <input matInput name="titulo" formControlName="titulo">
@@ -22,8 +22,8 @@
     </mat-form-field></td>
 
     <td><mat-form-field class="ano-full-width" appearance="fill">
-      <mat-label>ano</mat-label>
-      <input matInput
+      <mat-label>Data Lançamento</mat-label>
+      <input matInput placeholder="13/05/1982"
              name="data"
              formControlName="data">
     </mat-form-field></td>

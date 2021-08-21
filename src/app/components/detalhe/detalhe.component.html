@@ -3,13 +3,14 @@
     <mat-grid-list cols="2" rowHeight="1:1">
         <mat-grid-tile>
             <mat-card class="card">
-                <img mat-card-image src="{{ livro.url }}" alt="Photo of a Shiba Inu">
+                <img mat-card-image src="{{ livro.url }}" alt="">
             </mat-card>
         </mat-grid-tile>
 
         <mat-grid-tile class="esq">
-            <mat-card-content>
+            <mat-card-content class="esq-interno">
                 <mat-card-title>{{ livro.titulo }}</mat-card-title>
+                <br><br><br>
                 <mat-card-subtitle> by {{ livro.autor }}</mat-card-subtitle>
                 <p>
                     {{ livro.sinopse }}
