@@ -4,7 +4,7 @@
   width: calc(100% - 20px);
   justify-content: space-between;
   padding: 10px;
-  height: 1200px;
+  height: max-content;
   width: 100%;
   margin: 0;
 }
